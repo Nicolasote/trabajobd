@@ -1,0 +1,8 @@
+el codigo funciona, las paginas por ejemplo. el problema esta cuando trato de conectar la base de datos. la misma me trae por ejemplo lo que ingreso con un $_POST, pero cuando debe conectarse y validar los datos de la misma para guardarlos en mi base de datos me arroja lo siguiente.
+
+array(5) { ["nombre"]=> string(7) "Nicolas" ["apellido"]=> string(3) "sss" ["email"]=> string(25) "soteras.nicolas@gmail.com" ["comentarios"]=> string(9) "sadasdasd" ["register"]=> string(6) "enviar" }
+Warning: Undefined array key "correo" in C:\xampp\htdocs\trabajobasedatos\registrar.php on line 12
+
+este error de la linea 12 lo trate de buscar y solucionar pero como no supe aplicar los codigos que leí, me tranque allí, probé todo lo que pude acorde a lo que fui aprendiendo y la info que busco, pero ya no se como seguir luego de este problema.
+
+llena todos los campos "llega hasta alli"
