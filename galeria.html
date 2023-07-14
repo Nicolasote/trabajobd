@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesgaleria.css" media="screen" />
+    <title>Galeria de fotos</title>
+</head>
+
+<header>
+    <nav>
+      <ul>
+        <li><a href="INDEX.HTML">Inicio</a></li>
+        <li><a href="#">opcion 2</a></li>
+        <li><a href="galeria.html">mis fotos</a></l>
+        <li><a href="#">opcion 4</a></li>
+        <li><a href="ingresousuarios.html">Contacto</a></li>
+      </ul>
+    </nav>
+    
+</header>
+
+<!-- aca probamos el codigo del chat gpt -->
+
+
+<body>
+  
+ <section>   
+    <style>
+        .gallery {
+            justify-content: center;
+            padding-top: 150px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .gallery-item {
+            width: 400px;
+            margin: 10px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        
+        .modal-content {
+            display: block;
+            max-width: 70%;
+            max-height: 70%;
+            margin: auto;
+            margin-top: 5%;
+        }
+        
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script>
+        // JavaScript para mostrar y ocultar el modal al hacer clic en una imagen
+        document.addEventListener("DOMContentLoaded", function() {
+            var modal = document.getElementById("modal");
+            var images = document.querySelectorAll(".gallery-item img");
+            
+            // Agrega un evento de clic a cada imagen
+            images.forEach(function(image) {
+                image.addEventListener("click", function() {
+                    modal.style.display = "block";
+                    modal.querySelector("img").src = this.src;
+                });
+            });
+            
+            // Cierra el modal al hacer clic fuera de la imagen
+            modal.addEventListener("click", function(event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="im/aguila_arpia.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item">
+            <img src="im/aguila_filipina.jpg" alt="Imagen 2">
+        </div>
+        <div class="gallery-item">
+            <img src="im/blu.jpg" alt="Imagen 3">
+        </div>
+        <div class="gallery-item">
+          <img src="im/colibrx.jpg" alt="Imagen 4">
+      </div>
+      <div class="gallery-item">
+        <img src="im/kakapo.jpg" alt="Imagen 5">
+      </div>
+      <div class="gallery-item">
+        <img src="im/peakpx.jpg" alt="Imagen 6">
+      </div>
+        <!-- Aca agragamos mas imagenes si queremos -->
+    </div>
+    
+    <!-- Modal para mostrar la imagen agrandada -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <img src="" alt="Imagen">
+        </div>
+    </div>
+  </section>
+
+ <!-- aca termina la prueba -->
+</body>
+
+ <footer class="footer">
+  <!-- Contenido del footer -->
+  <p>&copy; 2023 Nicolas Soteras</p>
+  <p>Contacto: soteras.nicolas@gmail.com</p>
+ </footer>
+
+
+
+     
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+
+</html>
