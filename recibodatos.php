@@ -82,7 +82,7 @@ if($_GET["USUARIO"]==$admin1 && $_GET["PASS"]==$passadmin1){
 </div>
 
 <div class="d-flex justify-content-center">
-  <a target="" class="fcc-btn" href="index.html">Volver a intentarlo</a>  
+  <a target="" class="fcc-btn" href="ingresousuarios.html">Volver a intentarlo</a>  
 </div>
 
 
